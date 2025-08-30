@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Draw 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Welcome to Lucky Draw! 🎉</h1>
+
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button id="submitBtn">Submit</button>
+
+  <h2>Your Lucky Number:</h2>
+  <div id="assignedNumber"></div>
+
+  <h2>Seats:</h2>
+  <div id="seatsContainer"></div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    // Your Firebase Config
+    const firebaseConfig = {
+      apiKey: "YOUR_apiKey",
+      authDomain: "YOUR_authDomain",
+      projectId: "YOUR_projectId",
+      storageBucket: "YOUR_storageBucket",
+      messagingSenderId: "YOUR_messagingSenderId",
+      appId: "YOUR_appId",
+      measurementId: "YOUR_measurementId"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
